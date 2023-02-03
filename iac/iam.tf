@@ -350,6 +350,6 @@ resource "aws_iam_role_policy_attachment" "EMR_EC2_DefaultRole_attach" {
 }
 
 resource "aws_iam_instance_profile" "emr_profile" {
-    name = "emr_profile"
+    name = aws_iam_role.EMR_EC2_DefaultRole.name
     role = aws_iam_role.EMR_EC2_DefaultRole.name
 }
