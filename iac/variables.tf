@@ -17,4 +17,3 @@ variable "region" {
 variable "lambda_function_name" {
   default = "IGTIexecutaEMRaovivo"
 }
-

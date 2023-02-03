@@ -21,4 +21,3 @@ resource "aws_s3_bucket_object" "delta_upsert" {
   source = "../etl/02_delta_spark_upsert_from_tf.py"
   etag   = filemd5("../etl/02_delta_spark_upsert_from_tf.py")
 }
-
