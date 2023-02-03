@@ -81,7 +81,7 @@ def handler(event, context):
                 ],
 
                 StepConcurrencyLevel=1,
-
+                
                 Steps=[{
                     'Name': 'Delta Insert do ENEM',
                     'ActionOnFailure': 'CONTINUE',
@@ -113,7 +113,7 @@ def handler(event, context):
                     }
                 }],
             )
-
+            
     return {
         'statusCode': 200,
         'body': f"Started job flow {cluster_id['JobFlowId']}"
