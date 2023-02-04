@@ -93,7 +93,7 @@ def handler(event, context):
                                  '--conf', 'spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog', 
                                  '--master', 'yarn',
                                  '--deploy-mode', 'cluster',
-                                 's3://datalake-igti-diego-xpe-tf-producao-615564902404/emr-code/pyspark/01_delta_spark_insert.py'
+                                 's3://datalake-igti-diego-xpe-tf-producao-615564902404/emr-code/pyspark/01_delta_spark_insert_from_tf.py'
                                  ]
                     }
                 },
@@ -108,7 +108,7 @@ def handler(event, context):
                                  '--conf', 'spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog', 
                                  '--master', 'yarn',
                                  '--deploy-mode', 'cluster',
-                                 's3://datalake-igti-diego-xpe-tf-producao-615564902404/emr-code/pyspark/02_delta_spark_upsert.py'
+                                 's3://datalake-igti-diego-xpe-tf-producao-615564902404/emr-code/pyspark/02_delta_spark_upsert_from_tf.py'
                                  ]
                     }
                 }],
